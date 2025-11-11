@@ -143,6 +143,11 @@ body {
     color: #5a4a38;
 }
 
+#pivot img{
+    max-width: 800px;
+    border-radius: 30px;
+}
+
 .top5-img {
     width: 90%;
     max-width: 800px;
