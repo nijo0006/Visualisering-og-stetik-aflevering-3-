@@ -1,7 +1,195 @@
-body {
-    background-color: beige;
+/* === Reset & base === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    background: #f5efe6;
+    color: #4a3b2a;
+    line-height: 1.6;
+}
 
+/* === Header === */
+.header {
+    background: #e8dcc7;
+    border-bottom: 1px solid #d2c2a8;
+    padding: 3rem 0 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #b88652, #e0c097);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* === Hero === */
+.hero {
+    background: url('https://images.unsplash.com/photo-1608198093002-ad4e005484c0?auto=format&fit=crop&w=1200&q=80')
+    center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 7rem 1.5rem;
+    position: relative;
+    border-radius: 0 0 40px 40px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(44, 33, 20, 0.55);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    margin-bottom: 1.8rem;
+}
+
+.bmo {
+    background: #d6b47f;
+    color: #3b2a1a;
+    padding: 0.9rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.bmo:hover {
+    background: #c79c63;
+    transform: translateY(-3px);
+}
+
+/* === Produkter === */
+.products,
+.top5 {
+    text-align: center;
+    padding: 4.5rem 1rem;
+    background: #f2e9dc;
+}
+
+.products h2,
+.top5 h2 {
+    font-size: 2.2rem;
+    color: #3b2a1a;
+    margin-bottom: 1.5rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product {
+    background: #fffdf9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    padding: 1.2rem;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.product h3 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+/* === Top 5 sektion === */
+.top5 {
+    background: #f5efe6;
+}
+
+.top5 p {
+    margin-bottom: 2rem;
+    color: #5a4a38;
+}
+
+.top5-img {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.bmo-table {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fffdf9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.bmo-table th {
+    background: #e8dcc7;
+    color: #3b2a1a;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.bmo-table td {
+    padding: 1rem;
+    border-top: 1px solid #eee0c7;
+    color: #4a3b2a;
+}
+
+.bmo-table tr:nth-child(even) {
+    background: #f9f4eb;
+}
+
+.bmo-table tr:hover {
+    background: #f1e6d8;
+}
+
+/* === Footer === */
+.footer {
+    background: #e8dcc7;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #3b2a1a;
+    border-top: 1px solid #d2c2a8;
+}
 
