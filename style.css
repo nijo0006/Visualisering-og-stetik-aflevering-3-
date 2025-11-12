@@ -124,13 +124,21 @@ body {
 }
 
 .product img {
-    width: 100%;
-    border-radius: 12px;
+
+    border-radius: 14px;
+    height: 300px;        /* vælg den højde du vil have */
+    object-fit: cover;    /* gør dem ens og beskærer overskud */
+    width: 500px
+
 }
 
 .product h3 {
     margin-top: 1rem;
     font-size: 1.3rem;
+}
+
+.product p em{
+    font-size: 11px;
 }
 
 /* === Top 5 sektion === */
